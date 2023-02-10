@@ -16,7 +16,7 @@ public class LoginPage implements ActionListener {
     JLabel passwordLabel = new JLabel("Password");
     JLabel messageLabel = new JLabel();
 
-    HashMap<String,String > logInInfo = new HashMap<String,String >();
+    HashMap<String,String > logInInfo;
     LoginPage(HashMap<String,String> logInInfoOriginal){
         logInInfo = logInInfoOriginal;
         setAllComponentsPositions();
@@ -78,7 +78,7 @@ public class LoginPage implements ActionListener {
                     messageLabel.setForeground(Color.green);
                     messageLabel.setText("Login Successfully");
                     frame.dispose();
-                    WelcomePage welcomePage = new WelcomePage(userID);
+                    new WelcomePage(userID);
                 }
                 else{
                     messageLabel.setForeground(Color.red);
