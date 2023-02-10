@@ -7,10 +7,10 @@ public class IdAndPassword {
 
     IdAndPassword(){
         loginInfo.put("Bro","Pizza");
-        loginInfo.put("arzoo","arzoo111");
-        loginInfo.put("usman","usman111");
-        loginInfo.put("ammar","ammar661");
-        loginInfo.put("shuja","shuja999");
+        loginInfo.put("ali","111");
+        loginInfo.put("usman","111");
+        loginInfo.put("ammar","661");
+        loginInfo.put("umer","999");
     }
     protected HashMap<String,String > getLoginInfo(){
         return loginInfo;
